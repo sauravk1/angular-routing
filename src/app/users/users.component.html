@@ -1,0 +1,17 @@
+<div class="container">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a [routerLink]="['/users',1,'saurav']" [queryParams]="{id:1,name:'saurav'}" class="nav-link">get saurav details</a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['/users',2,'aman']" [queryParams]="{id:2,name:'aman'}"  class="nav-link">get Aman details</a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['/users',3,'harsh']" [queryParams]="{id:3,name:'harsh'}" class="nav-link">get Harsh details</a>
+        </li>
+     
+    </ul>
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>
